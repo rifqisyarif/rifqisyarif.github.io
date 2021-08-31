@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/rifqisyarif.github.io/login-page/dist/style.css">
+</head>
+<body>
+    <div>
+        <!-- Flex untuk = menggabungkan sebuah object --> 
+        <!-- Flex row untuk = menggabungkan object secara horizontal -->  
+        <!-- sticky top-0 untuk = menempelkan sebuah object atau nav bar, ketika di scrool maka nav bar tersebut ikut kebawah -->
+        <!-- bg-white untuk = mengubah bg menjadi putih -->
+        <!-- z-50 untuk = mengatur letak sebuah object -->
+        <nav id="navigation" class="flex flex-row h-16 sticky top-0 bg-white z-50">
+          <!-- w-4/12 artinya = mengubah lebar menjadi 4/12 -->
+          <div id="logo" class="w-4/12 py-4">
+            <!-- mx-auto artinya = membuat object menjadi ditengah -->
+            <img class="animate-bounce h-full mx-auto" src="https://nbs.co.id/img/logo-nbs.svg" alt="">
+          </div>
+          <!-- gap-3 untuk = memisahkan object secara berturan -->
+          <div id="link" class="w-6/12 flex flex-row gap-3">
+          <!-- hover digunakan untuk memberi efek saat = cursor kita menempel pada object tersebut -->
+            <a href="#" class=" hover:bg-blue-100 hover:text-purple-900 font-semibold flex justify-center items-center px-4 hover:shadow-lg hover:rounded-xl transition hover:scale-110">Expertise</a>
+            <a href="#" class="hover:bg-blue-100 hover:text-purple-900 font-semibold flex justify-center items-center px-4 hover:shadow-lg hover:rounded-xl transition hover:scale-110">About</a>
+            <a href="#" class="hover:bg-blue-100 hover:text-purple-900 font-semibold flex justify-center items-center px-4 hover:shadow-lg hover:rounded-xl transition hover:scale-110">Team</a>
+            <a href="#" class="hover:bg-blue-100 hover:text-purple-900 font-semibold flex justify-center items-center px-4 hover:shadow-lg hover:rounded-xl transition hover:scale-110">Work</a>
+            <a href="#" class="hover:bg-blue-100 hover:text-purple-900 font-semibold flex justify-center items-center px-4 hover:shadow-lg hover:rounded-xl transition hover:scale-110">Client</a>
+          </div>
+          <!-- justify-center untuk menyamakan jarak item dengan batas (horizontal atau vertikal ?) = horizontal -->
+          <!-- item-center untuk menyamakan jarak item dengan batas (horizontal atau vertikal ?) = vertikal dan horizontal, soalnya menurut saya sih klo misal objectnya awalnya gk di 
+          flex row maka objectnya jadi vertikal kan? kemudian jika di item center maka akan ditengah secara vertikal? maaf jika salah paham -->
+          <div id="tombol" class="w-2/12 flex justify-center items-center">
+            <a href="#" class=" border-2 py-1 px-2 rounded-3xl bg-purple-600 text-white hover:bg-purple-900 hover:rounded-3xl transition hover:scale-125 ">Get in Touch</a>
+          </div>
+        </nav>
+        <!-- h-screen untuk membuat tinggi elemen seberapa ? sebesar screen -->
+        <div id="hero" class="h-screen">
+          <div style="background-image:url('https://nbs.co.id/img/slide-1.jpg')" class="animate-pulse h-full w-full">
+            <!-- bg-opacity-50 untuk = menebalkan sebuah warna -->
+            <div class="h-full w-full bg-purple-900 bg-opacity-50 flex justify-center items-center">
+              <!-- text-white untuk = mengubah text menjadi putih -->
+              <h2 class="text-white text-4xl">Develop with Passion</h2>
+            </div>
+          </div>
+        </div>
+        <div id="expertise" class="flex flex-col justify-center items-center py-12 gap-8">
+          <h2 class="text-4xl">Our Expertise</h2>
+          <p class="w-2/3 text-center">NBS has a comprehensive expertise in planning, design, and development combined with popular, robust and reliable technology that fits with your needs. This is our helping hands to deliver a long-lasting impact to your business.</p>
+          <div class="w-10/12 flex flex-wrap justify-center items-center gap-y-4 ">
+          <!-- scale-110 untuk membuat efek = sebuah object menjadi membesar ketika cursor menempel pada objectnya -->
+          <div id="webapp" class="w-1/3 p-8 px-12 flex flex-col justify-center items-center hover:bg-blue-200 hover:shadow-lg hover:rounded-xl transition hover:scale-110">
+            <img src="https://nbs.co.id/img/ex-webapp.svg" alt="">
+            <h3 class="text-2xl font-semibold text-blue-700">Web Application</h3>
+          </div>
+          <div id="mobile" class="w-1/3 p-8 px-12 flex flex-col justify-center items-center hover:bg-blue-200 hover:shadow-lg hover:rounded-xl transition hover:scale-110">
+            <img src="https://nbs.co.id/img/ex-mobileapp.svg" alt="">
+            <h3 class="text-2xl font-semibold text-blue-700">Mobile Application</h3>
+            </div>
+          <div id="vrar" class="w-1/3 p-8 px-12 flex flex-col justify-center items-center hover:bg-blue-200 hover:shadow-lg hover:rounded-xl transition hover:scale-110" >
+            <img src="https://nbs.co.id/img/ex-games.svg" alt="">
+            <h3 class="text-2xl font-semibold text-blue-700">VR & AR</h3>
+            </div>
+          <div id="endtoend" class="w-1/3 p-8 px-12 flex flex-col justify-center items-center hover:bg-blue-200 hover:shadow-lg hover:rounded-xl transition hover:scale-110">
+            <img src="https://nbs.co.id/img/ex-endtoend.svg" alt="">
+            <h3 class="text-2xl font-semibold text-blue-700">End-to-end platform</h3></div>
+          <div id="consulting" class="w-1/3 p-8 px-12 flex flex-col justify-center items-center hover:bg-blue-200 hover:shadow-lg hover:rounded-xl transition hover:scale-110">
+            <img src="https://nbs.co.id/img/ex-consulting.svg" alt="">
+            <h3 class="text-2xl font-semibold text-blue-700">Consulting & Training</h3></div>
+          </div>
+        </div>
+        <div id="about" class="flex flex-row mb-10">
+          <!-- bg-no-repeat agar gambar background menjadi = menyesuaikan screen pada gambar tersebut -->
+          <!-- bg-left-bottom agar gambar background berada di = kiri -->
+          <div id="aboutkiri" class="w-1/2 p-32 flex flex-col gap-4 bg-no-repeat bg-left-bottom item " style="background-image:url('https://nbs.co.id/img/accent-dot.svg')">
+            <h2 class="text-4xl font-bold">We Are NBS</h2>
+            <p>Our vision is to transform your idea into a great product loved by your customer - enabling you to build a successful and impactful business.</p>
+            <div class="flex justify-start items-center">
+              <a href="#" class="border-2 border-purple-700 rounded-3xl py-3 px-10 hover:bg-blue-200 shadow-lg hover:scale-110 hover: transition rounded-3xl">Try a Project with Us</a>
+            </div>  
+          </div>
+          <div id="aboutkanan" class="w-1/2" style="background-image:url('https://nbs.co.id/img/banner-about.jpeg')"></div>
+        </div>
+      </div>
+</body>
+</html>
